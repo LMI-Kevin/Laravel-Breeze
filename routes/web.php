@@ -15,7 +15,11 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 
+    Route::get('/contracts', [ContractController::class, 'allContracts'])->name('contracts');
     Route::get('/add-contract', [ContractController::class, 'addContract'])->name('add-contract');
+    Route::post('/submit-contract', [ContractController::class, 'submitContract'])->name('submit-contract');
+
+    Route::get('/view-contract/{contractId}', [ContractController::class, 'viewContract'])->name('view-contract');
 });
 
 require __DIR__.'/auth.php';

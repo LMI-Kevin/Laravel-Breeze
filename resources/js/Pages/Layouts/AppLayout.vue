@@ -8,7 +8,7 @@ import { Link } from '@inertiajs/vue3'
         <div class="flex w-full bg-gray-900 text-white p-4 justify-between">
             <nav class="flex gap-3">
                 <Link :href="route('dashboard')">Dashboard</Link>
-                <!-- <Link :href="route('add-contract')">Add Contract</Link> -->
+                <Link :href="route('contracts')">Contracts</Link>
             </nav>
             <Link :href="route('logout')" method="POST">Logout</Link>
         </div>

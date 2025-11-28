@@ -25,7 +25,9 @@ return new class extends Migration
             $table->integer('number_of_kols');
             $table->integer('number_of_posts');
             $table->string('status')->nullable();
-            
+            $table->date('date_fulfilled')->nullable();
+            $table->text('remarks')->nullable();
+            $table->date('date_forwarded')->nullable();
             $table->timestamps();
         });
     }
