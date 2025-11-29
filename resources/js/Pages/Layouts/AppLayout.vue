@@ -14,6 +14,8 @@ import { Link } from '@inertiajs/vue3'
         </div>
     </header>
     <main>
-        <slot />
+        <div class="flex justify-center">
+            <slot />
+        </div>
     </main>
 </template>

@@ -28,4 +28,13 @@ class Contract extends Model
                             ->where('contracts.id', $contractId)
                             ->get();
     }
+
+    public static function getData($field, $value, $fields) {
+        return Contract::query()
+                            ->leftjoin('brands', 'contracts.brand', '=', 'brands.id')
+                            ->leftjoin('details', 'contracts.details', '=', 'details.id')
+                            ->select($fields)
+                            ->where($field, $value)
+                            ->get();
+    }
 }

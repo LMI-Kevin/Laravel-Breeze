@@ -12,7 +12,7 @@ const props = defineProps({
 
 </script>
 <template>
-    <div class="m-6 p-6 shadow-md">
+    <div class="m-6 p-6 shadow-md w-full">
         <Link :href="route('add-contract')" class="p-2 bg-gray-200 rounded-full">Add Contracts</Link>
 
         <table class="min-w-full table-auto mt-3">

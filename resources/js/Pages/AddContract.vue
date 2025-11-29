@@ -31,7 +31,7 @@ const submitContract = () => {
 
 </script>
 <template>
-    <div class="m-6 p-6 rounded shadow-md">
+    <div class="m-6 p-6 rounded shadow-md w-full">
         <h1 class="text-2xl font-bold">Add Contract</h1>
         <form class="mt-3" @submit.prevent="submitContract">
             <div class="grid grid-cols-2 gap-4">

@@ -20,6 +20,8 @@ Route::middleware('auth')->group(function () {
     Route::post('/submit-contract', [ContractController::class, 'submitContract'])->name('submit-contract');
 
     Route::get('/view-contract/{contractId}', [ContractController::class, 'viewContract'])->name('view-contract');
+    
+    Route::post('/store-post', [ContractController::class, 'storePosting'])->name('store-post');
 });
 
 require __DIR__.'/auth.php';
